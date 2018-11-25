@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<!--  ---   Header   ---     -->
+    <!-- Header -->
     <header class="main-header">
         <a class="main-logo">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="nerds">
@@ -24,17 +24,40 @@
             <a class="basket" href="#">Корзина</a>
         </div>
     </header>
-    <!--  ---   Main   ---     -->
+    <!-- Main -->
     <main class="container">
         <section class="filter">
             <h2 class="visually-hidden">Фильтр услуг</h2>
-            <!-- ЗДЕСЬ БУДЕТ ФОРМА -->
+            <!-- Form Container -->
+            <form class="filter-servises" method="post">
+                <fieldset class="filter-grid">
+                    <legend>Сетка:</legend>
+                    <label class="label" for="filter-grid"><input type="radio" name="grid" id="filter-grid" checked="">
+                        <i class="radio"></i><span>Адаптивная</span></label>
+                    <label class="label" for="filter-grid-2"><input type="radio" name="grid" id="filter-grid-2">
+                        <i class="radio"></i><span>Фиксировнная</span></label>
+                    <label class="label" for="filter-grid-3"><input type="radio" name="grid" id="filter-grid-3">
+                        <i class="radio"></i><span>Резиновая</span></label>
+                </fieldset>
+                <fieldset class="filter-features">
+                    <legend class="filter-properties">Особенности:</legend>
+                    <label class="label" for="filter-slider"><input type="checkbox" name="slider" id="filter-slider" checked><i class="checkbox"></i>
+                        <span>Слайдер</span></label>
+                    <label class="label" for="filter-box-adventeges"><input type="checkbox" name="box-adventeges" id="filter-box-adventeges"><i class="checkbox"></i>
+                        <span>Блок преимуществ</span></label>
+                    <label class="label" for="filter-news"><input type="checkbox" name="news" id="filter-news" checked><i class="checkbox"></i>
+                        <span>Новости</span></label>
+                    <label class="label" for="filter-gallery"><input type="checkbox" name="gallery" id="filter-gallery"><i class="checkbox"></i>
+                        <span>Галерея</span></label>
+                    <label class="label" for="filter-basket"><input type="checkbox" name="basket" id="filter-basket"><i class="checkbox"></i><span>Корзина</span></label>
+                </fieldset>
+                <input type="submit" value="Показать" class="button button-grey">
+            </form>
         </section>
-
         <section class="catalog">
             <h2 class="visully-hidden">Список шаблонов</h2>
             <ul class="catalog-list">
-                <!--  ---   Sedona ---     -->
+                <!-- Sedona -->
                 <li class="catalog-item">
                     <a href="#" class="catalog-link">
                         <img class="catalog-item-image" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
@@ -45,7 +68,7 @@
                         <a href="#" class="buy">9 900 руб.</a>
                     </section>
                 </li>
-                <!--  ---   Pink App ---     -->
+                <!-- Pink App -->
                 <li class="catalog-item">
                     <a href="#" class="catalog-link">
                         <img class="catalog-item-image" src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
@@ -56,7 +79,7 @@
                         <a href="#" class="buy">9 900 руб.</a>
                     </section>
                 </li>
-                <!--  ---   Barbershop ---     -->
+                <!-- Barbershop -->
                 <li class="catalog-item">
                     <a href="#" class="catalog-link">
                         <img class="catalog-item-image" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
@@ -67,7 +90,7 @@
                         <a href="#" class="buy">9 900 руб.</a>
                     </section>
                 </li>
-                <!--  ---  Mishka  ---     -->
+                <!-- Mishka -->
                 <li class="catalog-item">
                     <a href="#" class="catalog-link">
                         <img class="catalog-item-image" src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
@@ -78,7 +101,7 @@
                         <a href="#" class="buy">9 900 руб.</a>
                     </section>
                 </li>
-                <!--  ---  A Plus  ---     -->
+                <!-- A Plus -->
                 <li class="catalog-item">
                     <a href="#" class="catalog-link">
                         <img class="catalog-item-image" src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
@@ -89,7 +112,7 @@
                         <a href="#" class="buy">9 900 руб.</a>
                     </section>
                 </li>
-                <!--  ---  Кваст  ---     -->
+                <!-- Кваст -->
                 <li class="catalog-item">
                     <a href="#" class="catalog-link">
                         <img class="catalog-item-image" src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
@@ -103,7 +126,7 @@
             </ul>
         </section>
     </main>
-    <!--  ---   Footer   ---     -->
+    <!-- Footer -->
     <footer class="main-footer">
         <section class="footer-social">
             <ul>
@@ -117,6 +140,20 @@
             <p>Скидка 10% для друзей и социальных сетей</p>
         </section>
     </footer>
+    <!-- Write Us Container -->
+    <section class="write-us-hidden active" id="modal">
+        <h3>Напишите нам</h3>
+        <a><span class="modal-close"></span></a>
+        <form class="form-write-us" method="post">
+            <p><label for="name">Ваше имя:</label>
+                <input type="text" id="name" class="write-name" name="name" placeholder="Имя Фамилия" required=""></p>
+            <p><label for="email">Ваш e-mail:</label>
+                <input type="text" id="email" class="write-email" name="email" placeholder="email@example.com" required=""></p>
+            <label for="message">Текст письма:</label>
+            <textarea name="message" id="message" class="write-message" cols="30" rows="10" placeholder="В свободной форме" required=""></textarea>
+            <input type="submit" value="Отправить" class="button-submit">
+        </form>
+    </section>
 </body>
 
 </html>
