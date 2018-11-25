@@ -32,17 +32,41 @@
             <form class="filter-servises" method="post">
                 <fieldset class="filter-grid">
                     <legend>Сетка:</legend>
-                    <label class="label"><input type="radio" name="grid" id="filter-grid" checked="">Адаптивная</label>
-                    <label class="label"><input type="radio" name="grid" id="filter-grid-2">Фиксировнная</label>
-                    <label class="label"><input type="radio" name="grid" id="filter-grid-3">Резиновая</label>
+                    <div>
+                        <input type="radio" name="grid" id="filter-grid" checked="">
+                        <label for="filter-grid">Адаптивная</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="grid" id="filter-grid-2">
+                        <label for="filter-grid-2">Фиксированная</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="grid" id="filter-grid-3">
+                        <label for="filter-grid-3">Резиновая</label>
+                    </div>
                 </fieldset>
                 <fieldset class="filter-features">
                     <legend class="filter-properties">Особенности:</legend>
-                    <label class="label"><input type="checkbox" name="slider" id="filter-slider" checked>Слайдер</label>
-                    <label class="label"><input type="checkbox" name="box-adventeges" id="filter-box-adventeges">Блок преимуществ</label>
-                    <label class="label"><input type="checkbox" name="news" id="filter-news" checked>Новости</label>
-                    <label class="label"><input type="checkbox" name="gallery" id="filter-gallery">Галерея</label>
-                    <label class="label"><input type="checkbox" name="basket" id="filter-basket">Корзина</label>
+                    <div>
+                        <input type="checkbox" name="slider" id="filter-slider" checked>
+                        <label for="filter-slider">Слайдер</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="box-adventeges" id="filter-box-adventeges">
+                        <label for="filter-box-adventeges">Блок преимуществ</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="news" id="filter-news" checked>
+                        <label for="filter-news">Новости</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="gallery" id="filter-gallery">
+                        <label for="filter-gallery">Галерея</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="basket" id="filter-basket">
+                        <label for="filter-basket">Корзина</label>
+                    </div>
                 </fieldset>
                 <button value="Показать" class="button button-grey">Показать</button>
             </form>
@@ -138,10 +162,10 @@
         <h3>Напишите нам</h3>
         <a><span class="modal-close"></span></a>
         <form class="form-write-us" method="post">
-            <p><label for="name">Ваше имя:</label>
-                <input type="text" id="name" class="write-name" name="name" placeholder="Имя Фамилия" required=""></p>
-            <p><label for="email">Ваш e-mail:</label>
-                <input type="text" id="email" class="write-email" name="email" placeholder="email@example.com" required=""></p>
+            <div><label for="name">Ваше имя:</label>
+                <input type="text" id="name" class="write-name" name="name" placeholder="Имя Фамилия" required=""></div>
+            <div><label for="email">Ваш e-mail:</label>
+                <input type="text" id="email" class="write-email" name="email" placeholder="email@example.com" required=""></div>
             <label for="message">Текст письма:</label>
             <textarea name="message" id="message" class="write-message" cols="30" rows="10" placeholder="В свободной форме" required=""></textarea>
             <button value="Отправить" class="button-submit">Отправить</button>
