@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background-color: #eeeeee;
+}
+
+.main-logo a:focus,
+.main-logo a:hover {
+    color: #fb565a;
+}
+
+.site-navigation,
+.user-basket {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-basket a {
+    color: #000000;
+    font-weight: 700;
+
+}
+
+.site-navigation a:focus,
+.site-navigation a:hover,
+.user-basket a:focus,
+.user-basket a:hover {
+    color: #fb565a;
+    border-bottom: 2px solid #fb565a;
+    padding-bottom: 10px;
+}
+
+.user-basket {
+    background: url(../img/cart-icon.svg) no-repeat;
+    padding-left: 40px;
+    margin-right: 20px;
+}
+
+/* MAIN */
+.container h3 {
+    font-size: 24px;
+}
+
+.btn {
+    color: #000000;
+}
+
+/* Footer */
+.footer-social a {
+    display: inline-block;
+    vertical-align: top;
+    width: 79px;
+    height: 79px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.social-vk {
+    background: url(../img/vk-icon.svg) no-repeat center;
+}
+
+.social-fb {
+    background: url(../img/fb-icon.svg) no-repeat center;
+}
+
+.social-insta {
+    background: url(../img/insta-icon.svg) no-repeat center;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.footer-friends h2 {
+    font-size: 36px;
+}
+
+/* Catalog */
+.catalog-item::before {
+    display: inline-block;
+    vertical-align: top;
+    content: "";
+    background: url(../img/browser.svg) no-repeat;
+    height: 40px;
+    width: 360px;
+    opacity: .3;
+    padding: 0;
+}
+
+.catalog-item {
+    list-style: none;
+}
+
+.item-info a {
+    color: black;
+}
+
+.item-info h3 {
+    font-size: 18px
+}
+
+.item-info p {
+    color: #666666;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter-grid {
+    margin: 0;
+    padding: 0;
+}

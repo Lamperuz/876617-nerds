@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,9 +22,11 @@
                 <li><a href="Contacts.html">Контакты</a></li>
             </ul>
         </nav>
-        <div class="user-basket">
-            <a class="basket" href="#">Корзина</a>
-        </div>
+        <ul class="user-basket">
+            <li>
+                <a class="basket" href="Basket.html">Корзина</a>
+            </li>
+        </ul>
     </header>
     <!-- Main -->
     <main class="container">
@@ -33,7 +37,7 @@
                 <fieldset class="filter-grid">
                     <legend>Сетка:</legend>
                     <div>
-                        <input type="radio" name="grid" id="filter-grid" checked="">
+                        <input type="radio" name="grid" id="filter-grid" checked>
                         <label for="filter-grid">Адаптивная</label>
                     </div>
                     <div>
@@ -145,11 +149,17 @@
     </main>
     <!-- Footer -->
     <footer class="main-footer">
-        <section class="footer-social">
-            <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+        <section>
+            <ul class="footer-social">
+                <li><a class="social-vk" href="#">
+                        <span class="visually-hidden">Вконтакте</span></a>
+                </li>
+                <li><a class="social-fb" href="#">
+                        <span class="visually-hidden">Фейсбук</span></a>
+                </li>
+                <li><a class="social-insta" href="#">
+                        <span class="visually-hidden">Инстаграм</span></a>
+                </li>
             </ul>
         </section>
         <section class="footer-friends">
