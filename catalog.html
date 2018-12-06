@@ -5,31 +5,40 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header -->
     <header class="main-header">
-        <a class="main-logo">
-            <img src="img/nerds-logo.svg" width="160" height="65" alt="nerds">
-        </a>
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li><a href="Studio.html">Студия</a></li>
-                <li><a href="Client.html">Клиенты</a></li>
-                <li><a href="Shop.html">Магазин</a></li>
-                <li><a href="Contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-        <ul class="user-basket">
-            <li>
-                <a class="basket" href="Basket.html">Корзина</a>
-            </li>
-        </ul>
+        <div class="container">
+            <div class="header-navigation">
+                <a class="header-logo" href="index.html">
+                    <img src="img/nerds-logo.svg" width="160" height="65" alt="nerds">
+                </a>
+                <nav class="main-navigation">
+                    <ul class="site-navigation">
+                        <li><a href="index.html">Студия</a></li>
+                        <li><a href="Client.html">Клиенты</a></li>
+                        <li><a class="item-active" href="catalog.html">Магазин</a></li>
+                        <li><a href="Contacts.html">Контакты</a></li>
+                    </ul>
+                    <ul class="user-basket">
+                        <li>
+                            <a class="basket" href="Basket.html">Корзина</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="catalog-name">
+                <h2>Магазин готовых шаблонов</h2>
+            </div>
+        </div>
     </header>
     <!-- Main -->
     <main class="container">
+        <div class="catalog-wrapper">
         <section class="filter">
             <h2 class="visually-hidden">Фильтр услуг</h2>
             <!-- Form Container -->
@@ -75,81 +84,92 @@
                 <button value="Показать" class="button button-grey">Показать</button>
             </form>
         </section>
-        <section class="catalog">
-            <h2 class="visully-hidden">Список шаблонов</h2>
-            <ul class="catalog-list">
-                <!-- Sedona -->
-                <li class="catalog-item">
-                    <a href="#" class="catalog-link">
-                        <img class="catalog-item-image" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-                    </a>
-                    <section class="item-info">
-                        <h3>Sedona</h3>
-                        <p>Информационный сайт для туристов</p>
-                        <a href="#" class="buy">9 900 руб.</a>
-                    </section>
-                </li>
-                <!-- Pink App -->
-                <li class="catalog-item">
-                    <a href="#" class="catalog-link">
-                        <img class="catalog-item-image" src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
-                    </a>
-                    <section class="item-info">
-                        <h3>Pink App</h3>
-                        <p>Продуктовый лендинг приложения для IOS и Android</p>
-                        <a href="#" class="buy">9 900 руб.</a>
-                    </section>
-                </li>
-                <!-- Barbershop -->
-                <li class="catalog-item">
-                    <a href="#" class="catalog-link">
-                        <img class="catalog-item-image" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
-                    </a>
-                    <section class="item-info">
-                        <h3>Barbershop</h3>
-                        <p>Салон красоты</p>
-                        <a href="#" class="buy">9 900 руб.</a>
-                    </section>
-                </li>
-                <!-- Mishka -->
-                <li class="catalog-item">
-                    <a href="#" class="catalog-link">
-                        <img class="catalog-item-image" src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-                    </a>
-                    <section class="item-info">
-                        <h3>Mishka</h3>
-                        <p>Милые штуки ручной работы для дома</p>
-                        <a href="#" class="buy">9 900 руб.</a>
-                    </section>
-                </li>
-                <!-- A Plus -->
-                <li class="catalog-item">
-                    <a href="#" class="catalog-link">
-                        <img class="catalog-item-image" src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
-                    </a>
-                    <section class="item-info">
-                        <h3>A Plus</h3>
-                        <p>Курсы квалификации</p>
-                        <a href="#" class="buy">9 900 руб.</a>
-                    </section>
-                </li>
-                <!-- Кваст -->
-                <li class="catalog-item">
-                    <a href="#" class="catalog-link">
-                        <img class="catalog-item-image" src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-                    </a>
-                    <section class="item-info">
-                        <h3>Кваст</h3>
-                        <p>Сайт производителя крафтового кваса</p>
-                        <a href="#" class="buy">9 900 руб.</a>
-                    </section>
-                </li>
-            </ul>
-        </section>
+        <!-- Catalog -->
+        <div class="catalog-list">
+            <!-- Sedona -->
+            <section class="catalog-items">
+                <div class="catalog-picture">
+                    <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+                </div>
+                <div class="catalog-info">
+                    <h1>
+                        <a href="#">Sedona</a>
+                    </h1>
+                    <p>Информационный сайт<br> для туристов</p>
+                    <a class="price-btn" href="#">9 900 руб.</a>
+                </div>
+            </section>
+            <!-- Pink App -->
+            <section class="catalog-items">
+                <div class="catalog-picture">
+                    <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
+                </div>
+                <div class="catalog-info">
+                    <h1>
+                        <a href="#">Pink app</a>
+                    </h1>
+                    <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                    <a class="price-btn" href="#">9 900 руб.</a>
+                </div>
+            </section>
+            <!-- Barbershop -->
+            <section class="catalog-items">
+                <div class="catalog-picture">
+                    <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+                </div>
+                <div class="catalog-info">
+                    <h1>
+                        <a href="#">Barbershop</a>
+                    </h1>
+                    <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                    <a class="price-btn" href="#">9 900 руб.</a>
+                </div>
+            </section>
+            <!-- Mishka -->
+            <section class="catalog-items">
+                <div class="catalog-picture">
+                    <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+                </div>
+                <div class="catalog-info">
+                    <h1>
+                        <a href="#">Mishka</a>
+                    </h1>
+                    <p>Интернет-магазин<br> вязаных игрушек</p>
+                    <a class="price-btn" href="#">9 900 руб.</a>
+                </div>
+            </section>
+            <!-- A Plus -->
+            <section class="catalog-items">
+                <div class="catalog-picture">
+                    <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
+                </div>
+                <div class="catalog-info">
+                    <h1>
+                        <a href="#">A Plus</a>
+                    </h1>
+                    <p>Лендинг курсов повышения квалификации</p>
+                    <a class="price-btn" href="#">9 900 руб.</a>
+                </div>
+            </section>
+            <!-- Кваст -->
+            <section class="catalog-items">
+                <div class="catalog-picture">
+                    <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+                </div>
+                <div class="catalog-info">
+                    <h1>
+                        <a href="#">Кваст</a>
+                    </h1>
+                    <p>Промо-сайт производителя крафтового кваса</p>
+                    <a class="price-btn" href="#">9 900 руб.</a>
+                </div>
+            </section>
+        </div>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="main-footer">
-        <section>
+        <section class="contackts-social container">
             <ul class="footer-social">
                 <li><a class="social-vk" href="#">
                         <span class="visually-hidden">Вконтакте</span></a>
@@ -161,10 +181,11 @@
                         <span class="visually-hidden">Инстаграм</span></a>
                 </li>
             </ul>
-        </section>
-        <section class="footer-friends">
-            <h2>Давайте дружить, это выгодно!</h2>
-            <p>Скидка 10% для друзей и социальных сетей</p>
+
+            <div class="footer-friends">
+                <h2>Давайте дружить, это выгодно!</h2>
+                <p>Скидка 10% для друзей и социальных сетей</p>
+            </div>
         </section>
     </footer>
     <!-- Write Us Container -->
