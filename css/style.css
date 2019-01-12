@@ -944,6 +944,10 @@ a {
     opacity: 0.3;
 }
 
+.modal-show {
+    display: block;
+    z-index: 2;
+}
 
 
 /*Head-Catalog*/
