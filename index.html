@@ -31,6 +31,35 @@
                     </ul>
                 </nav>
             </div>
+            <!-- Слайдер -->
+            <section class="slider">
+                <h2 class="visually-hidden">Промо слайдер преимуществ</h2>
+                <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+                <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+                <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+                <div class="slider-controls">
+                    <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый слайд</label>
+                    <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй слайд</label>
+                    <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий слайд</label>
+                </div>
+                <ul class="slider-list">
+                    <li class="slider-item">
+                        <h3>Долго, дорого,<br> скрупулезно.</h3>
+                        <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                        <a class="slider-button" href="#">Узнать больше</a>
+                    </li>
+                    <li class="slider-item">
+                        <h3>Любим математику как никто другой</h3>
+                        <p>Никакого креатива, только Математические формулы для расчета идеальных пропорций.</p>
+                        <a class="slider-button" href="#">Узнать больше</a>
+                    </li>
+                    <li class="slider-item">
+                        <h3>Только ночь,<br> только хардкор</h3>
+                        <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                        <a class="slider-button" href="#">Узнать больше</a>
+                    </li>
+                </ul>
+            </section>
         </div>
     </header>
     <!-- Main -->
@@ -62,10 +91,84 @@
                     <a class="button-presentation" href="catalog.html">Заказать</a>
                 </section>
             </section>
+
+            <section class="about-us">
+                <h2 class="visually-hidden">Описание</h2>
+                <section class="about-us-info">
+                    <h2>Мы ‒ маленькая, но гордая дизайн-студия из Краснодара.</h2>
+                    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем непокладая рук, как роботы.</p>
+                    <h3>Выполняем заказы на разработку:</h3>
+                    <ul class="about-us-list">
+                        <li>Веб-сайтов любой сложности</li>
+                        <li>Мобильных приложений для iOS и Android</li>
+                        <li>Слайдшоу и видео для корпоративных презентаций</li>
+                    </ul>
+                </section>
+
+                <section class="about-us-stats">
+                    <h2 class="visually-hidden">Статистика Нердс</h2>
+                    <div class="about-us-logo">
+                        <img src="img/about-us-logo.jpg" width="360" height="208" alt="Логотип студии Нердс">
+                    </div>
+                    <p class="about-us-stats-table">С 2004 года любим точность во всем:</p>
+                    <table class="about-us-table">
+                        <tr class="about-us-table-percent">
+                            <td>146<span>%</span></td>
+                            <td>100<span>%</span></td>
+                            <td>50<span>%</span></td>
+                        </tr>
+                        <tr class="about-us-table-text">
+                            <td>Уровень самоотдачи</td>
+                            <td>Соблюдение сроков</td>
+                            <td>минимальная предоплата</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+
+            <section class="logotypes">
+                <h2 class="visually-hidden">Логотипы брендов</h2>
+                <ul class="logotypes-list">
+                    <li class="logo-item logo-list logo-htmlacademy">
+                        <a class="logo-link" href="https://htmlacademy.ru/">
+                            <img src="img/logo-htmlacademy.png" width="260" height="180" alt="Логотип сайта HTML Academy">
+                        </a>
+                    </li>
+                    <li class="logo-item logo-list logo-borodinski">
+                        <a class="logo-link" href="#">
+                            <img src="img/logo-borodinski.png" width="260" height="180" alt="Логотип сайта Бородинский">
+                        </a>
+                    </li>
+                    <li class="logo-item logo-list logo-pink">
+                        <a class="logo-link" href="#">
+                            <img src="img/logo-pink.png" width="260" height="180" alt="Логотип сайта Пинк">
+                        </a>
+                    </li>
+                    <li class="logo-item logo-mishka">
+                        <a class="logo-link" href="#">
+                            <img src="img/logo-mishka.png" width="260" height="180" alt="Логотип сайта Мишка">
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </div>
     </main>
     <!-- Footer -->
     <footer class="main-footer">
+        <div class="contacts-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Add00b8a6e82aefd24543c726ac0754ae7835d36d3f0d93df4157d1bb5a047181&amp;source=constructor" width="1440" height="416" frameborder="0"></iframe>
+
+            <section class="contacts">
+                <h2 class="visually-hidden">Контактная информация</h2>
+                <div class="contacts-info">
+                    <h3>Nёrds design studio</h3>
+                    <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7(812)275-75-75</p>
+                    <a class="about-us-button" href="#">Напишите нам</a>
+                </div>
+            </section>
+        </div>
+
         <section class="contackts-social container">
             <ul class="footer-social">
                 <li><a class="social-vk" href="#">
@@ -86,7 +189,7 @@
         </section>
     </footer>
     <!-- Write Us form Container -->
-    <section class="write-us" id="modal">
+    <section class="write-us">
         <div class="modal-us">
             <h3>Напишите нам</h3>
             <form class="form-write-us" method="post">
@@ -107,6 +210,7 @@
             </form>
         </div>
     </section>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
